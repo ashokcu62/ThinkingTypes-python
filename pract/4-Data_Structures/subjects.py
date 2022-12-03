@@ -1,23 +1,24 @@
-#tuple :
+# tuple :
 # onece we create a tuple it cannot change
-sub:tuple[str,str,str,str]=("maths",'science',"english","it")
-print(sub)
-#len
+subjects: tuple[str, str, str, str] = ("maths", 'science', "english", "it")
+print(subjects)
+# len
+for subject in subjects:
+    print(subject)
 
-print(f"{len(sub)}")
+# len
+print(f" length {len(subject)}")
 
-#items
-for subs in sub:
-    print(subs)
+# incresing tupple size
+n1: tuple[str, str, str] = ("english", "python", "physics")
+print(n1)
+subjects = n1+subjects
+print(subjects)
 
-
-#adding values into tuple
-new_sub=("ca","pgdca","Tally")
-total_sub=sub+new_sub
-print(total_sub)
-
-val="Tally"
-if val in total_sub:
-    print("in the subject")
+#check vals
+if "python"in subjects:
+    print("ys have")
 else:
-    print("not in the tuple")
+    print("dont have")
+
+    

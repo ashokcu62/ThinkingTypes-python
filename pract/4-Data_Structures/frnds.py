@@ -4,7 +4,7 @@ frnds: list[str] = ["popo", "chiko", "momo", "zoyo", "babo"]
 for x in frnds:
     print(f"{[x]}{x} zolo")
 
-# fried length
+# friend length
 print(f"friends length is {len(frnds)}")
 
 # unfrnd

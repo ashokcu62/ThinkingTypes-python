@@ -19,48 +19,44 @@ print(marks.values())
 for sub, mark in marks.items():
     print(f"subject :{sub} | mark :{mark}")
 
-# check faild or pass
+for sub,mark in marks.items():
+    print(f" sub:{sub} = {mark}")
 
-for sub, mark in marks.items():
-    if mark <= 23:
-        print(f"{sub} :passed")
-    else:
-        print(f"{sub}: faild")
-# updating value in dict
-
-print(marks["maths"])
-marks["maths"] = 27
-print(marks["maths"])
+print(marks.items())
 
 
-# taking values
-maths_mark = marks["maths"]
-print(f"maths mark {maths_mark}")
+#check pass or not
+
+for sub,mark in marks.items():
+     if mark>=23:
+        print(f"passed {sub}")
+     else:
+
+        print(f"faild  {sub}")
+
+marks["suology"]=500
+
+print(marks)
 
 
-# taking values meth 2
-physics_score = marks.get("physics")
-print(physics_score)
+#alt 1
+#check score'
+maths_score=marks["maths"]
+print(f"maths score{maths_score}")
 
-# get bug
-# jv=marks["java"]
+#alt 2
+alr=marks.get("maths")
+print(f"2 {alr}")
 
-# in the case of using get method
-jv = marks.get("java")
-print(f"jv :{jv}")    # get method returning none when the key is not existing
+#for error less value   imp in get 
+alr=marks.get("maths")
 
-if jv :
-    print("had nothing")
+if alr != None:
+    print(f"maths score{alr}")
 else:
-    print("have values in jv", type(jv))
+    print("invalid subject")
 
-
-# commet on dict
-n1:dict[str,int]={
-    "one":1,
-    "two":2,
-    "three":3
-}
-
-n1["one"]="True"
-print(n1)
+# delete key and pair in the dictionary
+# del key
+del marks["maths"]
+print(marks)
