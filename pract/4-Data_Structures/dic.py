@@ -60,3 +60,5 @@ else:
 # del key
 del marks["maths"]
 print(marks)
+
+

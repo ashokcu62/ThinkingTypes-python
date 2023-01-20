@@ -31,4 +31,5 @@ cr2.update_item(egg, qty=48, discount=12)
 cr2.add_item(apple, qty=8, discount=2)
 cr2.display_invoice()
 
-print(cr2.toJSON())
+# print(cr2.toJSON())
+cr2.bugshw()

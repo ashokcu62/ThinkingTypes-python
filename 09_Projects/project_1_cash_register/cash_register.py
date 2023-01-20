@@ -75,6 +75,9 @@ class CashRegister:
         print(f"Total Price: ${self.get_invoice_total():.2f}")
         print("+" * 70)
 
+    def bugshw(self):
+        print(type(self.items.items()))
+
     def _get_items_as_dict(self) -> dict:
         items_dict = {}
         for item_name, invoice_item in self.items.items():
